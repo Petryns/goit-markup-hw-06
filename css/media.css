@@ -22,6 +22,19 @@
   }
 }
 
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-container {
+    background-color: var(--black-color);
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bgd-mob-2x.jpg);
+  }
+}
+
 /**-------------------TABLET---------------------- */
 
 @media screen and (min-width: 768px) {
@@ -60,6 +73,28 @@
     width: calc((100% - 3 * 16px) / 3);
     height: 88px;
   }
+
+  .hero-container {
+    padding: 112px 136px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bgd-tab.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-container {
+    background-color: var(--black-color);
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bgd-tab-2x.jpg);
+  }
 }
 
 /**-------------------DESKTOP---------------------- */
@@ -90,5 +125,27 @@
   .customers-item {
     width: calc((100% - 120px) / 6);
     height: 88px;
+  }
+
+  .hero-container {
+    padding: 260px 432px 188px 432px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bgd.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-container {
+    background-color: var(--black-color);
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bgd-2x.jpg);
   }
 }
