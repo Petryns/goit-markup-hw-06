@@ -1,0 +1,94 @@
+/**-------------------MOBILE---------------------- */
+
+@media screen and (min-width: 428px) {
+  .container {
+    max-width: 428px;
+  }
+
+  .benefits {
+    margin: 96px 16px;
+  }
+
+  .benefits-item {
+    max-width: 396px;
+  }
+
+  .benefits-subtitle {
+    text-align: center;
+  }
+
+  .benefits-list {
+    gap: 72px;
+  }
+}
+
+/**-------------------TABLET---------------------- */
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .benefits-subtitle {
+    text-align: unset;
+  }
+
+  .benefits {
+    margin-top: 96px;
+    margin-bottom: 96px;
+  }
+
+  .benefits-item {
+    max-width: unset;
+    width: calc((100% - 2 * 24px) / 2);
+  }
+
+  .benefits-list {
+    gap: 72px 24px;
+  }
+
+  .team-list {
+    gap: 64px 24px;
+  }
+
+  .team-list-item {
+    max-width: unset;
+    width: calc((100% - 24px) / 2);
+  }
+
+  .customers-item {
+    width: calc((100% - 3 * 16px) / 3);
+    height: 88px;
+  }
+}
+
+/**-------------------DESKTOP---------------------- */
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
+
+  .benefits-item {
+    max-width: unset;
+    width: calc((100% - 72px) / 4);
+  }
+
+  .benefits-list {
+    gap: 24px;
+  }
+
+  .team-list {
+    gap: 24px;
+  }
+
+  .team-list-item {
+    max-width: unset;
+    width: calc((100% - 3 * 24px) / 4);
+  }
+
+  .customers-item {
+    width: calc((100% - 120px) / 6);
+    height: 88px;
+  }
+}
