@@ -1,6 +1,6 @@
 /**-------------------MOBILE---------------------- */
 
-@media screen and (min-width: 428px) {
+@media screen and (min-width: 320px) {
   .container {
     max-width: 428px;
   }
@@ -187,6 +187,15 @@
       ),
       url(../images/hero-bgd-tab.jpg);
   }
+
+  .form-subscribe {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc((100% - 24px) / 2);
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -370,6 +379,51 @@
 
   .benefits-icon {
     fill: #f4f4fd;
+  }
+
+  .footer-container {
+    /* width: unset; */
+    max-width: 1440px;
+    /* padding: 100px 1020px 101px 156px; */
+    display: flex;
+    flex-direction: row;
+    /* gap: 72px; */
+    /* align-items: center;
+  justify-content: center; */
+    align-items: baseline;
+  }
+
+  .footer-subscribe-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .form-subscribe {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .subscribe-btn {
+    min-width: 165px;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 4px;
+    background: var(--sky-blue);
+    border: none;
+    color: var(--white-color);
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
   }
 }
 
