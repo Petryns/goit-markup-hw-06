@@ -20,6 +20,10 @@
   .benefits-list {
     gap: 72px;
   }
+
+  .doing-title {
+    display: none;
+  }
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -40,6 +44,20 @@
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+  }
+
+  .header-menu {
+    display: flex;
+  }
+
+  .header-address {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .mob-menu-open-btn {
+    display: none;
   }
 
   .header-navigation {
@@ -135,10 +153,16 @@
     gap: 72px 24px;
   }
 
-  .doing-list {
-    display: flex;
-    padding-bottom: 120px;
-    gap: 24px;
+  .doing-title {
+    display: none;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--black-color);
+    margin-bottom: 72px;
   }
 
   .team-list {
@@ -185,11 +209,22 @@
     max-width: 1158px;
   }
 
-  .header-no-mob {
+  .header-menu {
     display: flex;
-    gap: 40px;
+  }
+
+  .header-address {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .mob-menu-open-btn {
+    display: none;
+  }
+
+  .header-container {
+    display: flex;
     align-items: center;
-    justify-content: center;
   }
 
   .header-navigation {
@@ -271,6 +306,19 @@
     gap: 24px;
   }
 
+  .doing-title {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--black-color);
+    margin-bottom: 72px;
+  }
+
   .doing-list {
     display: flex;
     padding-bottom: 120px;
@@ -298,6 +346,30 @@
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero-bgd.jpg);
+  }
+
+  .benefits-icon-container {
+    width: 264px;
+    height: 112px;
+    background: #f4f4fd;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .benefits-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--black-color);
+    margin-bottom: 8px;
+  }
+
+  .benefits-icon {
+    fill: #f4f4fd;
   }
 }
 
