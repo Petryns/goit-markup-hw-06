@@ -1,441 +1,432 @@
-/**-------------------MOBILE---------------------- */
+/*! only phone */
 
-@media screen and (min-width: 320px) {
-  .container {
-    max-width: 428px;
-  }
-
-  .benefits {
-    margin: 96px 16px;
-  }
-
-  .benefits-item {
-    max-width: 396px;
-  }
-
-  .benefits-subtitle {
-    text-align: center;
-  }
-
-  .benefits-list {
-    gap: 72px;
-  }
-
-  .doing-title {
-    display: none;
+@media screen and (min-width: 350px) and (max-width: 767px) {
+  .project-title {
+    font-size: 18px;
   }
 }
 
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero-container {
-    background-color: var(--black-color);
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/hero-bgd-mob-2x.jpg);
+@media screen and (max-width: 330px) {
+  .tel-contact {
+    font-size: 20px;
+  }
+
+  .mob-nav-item {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 331px) and (max-width: 427px) {
+  .tel-contact {
+    font-size: 26px;
   }
 }
 
-/**-------------------TABLET---------------------- */
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-
-  .header-menu {
-    display: flex;
-  }
-
-  .header-address {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .mob-menu-open-btn {
-    display: none;
-  }
-
-  .header-navigation {
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-  }
-
-  .header-menu {
-    display: flex;
-    /* align-items: center; */
-    /* margin-left: 76px; */
-    gap: 40px;
-  }
-
-  .header-no-mob {
-    display: flex;
-  }
-
-  .header-menu-link {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--black-color);
-    padding: 24px 0 24px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
-  }
-
-  .header-studio-link {
-    color: var(--ocean-blue);
-  }
-
-  .header-studio-link::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 20px;
-    height: 4px;
-    background-color: #404bbf;
-    border-radius: 2px;
-    display: block;
-    width: 100%;
-    border: none;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .header-menu-link:hover,
-  .header-menu-link:focus {
-    color: var(--ocean-blue);
-  }
-
-  .header-address {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-  }
-
-  .header-address-link {
-    color: var(--main-color);
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .header-address-link:hover,
-  .header-address-link:focus {
-    color: var(--ocean-blue);
-  }
-
-  .addreses {
-    font-style: normal;
-    align-items: center;
-  }
-
-  .benefits-subtitle {
-    text-align: unset;
-  }
-
-  .benefits {
-    margin-top: 96px;
-    margin-bottom: 96px;
-  }
-
-  .benefits-item {
-    max-width: unset;
-    width: calc((100% - 2 * 24px) / 2);
-  }
-
-  .benefits-list {
-    gap: 72px 24px;
-  }
-
-  .doing-title {
-    display: none;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: var(--black-color);
-    margin-bottom: 72px;
-  }
-
-  .team-list {
-    gap: 64px 24px;
-  }
-
-  .team-list-item {
-    max-width: unset;
-    width: calc((100% - 24px) / 2);
-  }
-
-  .customers-item {
-    width: calc((100% - 3 * 16px) / 3);
-    height: 88px;
-  }
-
-  .hero-container {
-    padding: 112px 136px;
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/hero-bgd-tab.jpg);
-  }
-
-  .form-subscribe {
-    display: flex;
-    flex-wrap: wrap;
-    width: calc((100% - 24px) / 2);
-    gap: 24px;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero-container {
-    background-color: var(--black-color);
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/hero-bgd-tab-2x.jpg);
-  }
-}
-
-/**-------------------DESKTOP---------------------- */
-
-@media screen and (min-width: 1158px) {
-  .container {
-    max-width: 1158px;
-  }
-
-  .header-menu {
-    display: flex;
-  }
-
-  .header-address {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .mob-menu-open-btn {
+@media screen and (max-width: 767px) {
+  .contacts {
     display: none;
   }
 
   .header-container {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    max-width: 428px;
+    padding-top: 24px;
+    padding-bottom: 22px;
   }
 
-  .header-navigation {
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-  }
-
-  .header-menu {
-    display: flex;
-    /* align-items: center; */
-    /* margin-left: 76px; */
-  }
-
-  .header-menu-link {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--black-color);
-    padding: 24px 0 24px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
-  }
-
-  .header-studio-link {
-    color: var(--ocean-blue);
-  }
-
-  .header-studio-link::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 20px;
-    height: 4px;
-    background-color: #404bbf;
-    border-radius: 2px;
-    display: block;
-    width: 100%;
-    border: none;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .header-menu-link:hover,
-  .header-menu-link:focus {
-    color: var(--ocean-blue);
-  }
-
-  .header-address {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-  }
-
-  .header-address-link {
-    color: var(--main-color);
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .header-address-link:hover,
-  .header-address-link:focus {
-    color: var(--ocean-blue);
-  }
-
-  .addreses {
-    font-style: normal;
-    align-items: center;
-  }
-
-  .benefits-item {
-    max-width: unset;
-    width: calc((100% - 72px) / 4);
-  }
-
-  .benefits-list {
-    gap: 24px;
-  }
-
-  .doing-title {
-    display: flex;
-    justify-content: center;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: var(--black-color);
+  .advant-item:not(:last-child) {
     margin-bottom: 72px;
   }
 
-  .doing-list {
+  .team-card:not(:last-child) {
+    margin-bottom: 72px;
+  }
+
+  .logo-container {
     display: flex;
-    padding-bottom: 120px;
-    gap: 24px;
-  }
-
-  .team-list {
-    gap: 24px;
-  }
-
-  .team-list-item {
-    max-width: unset;
-    width: calc((100% - 3 * 24px) / 4);
-  }
-
-  .customers-item {
-    width: calc((100% - 120px) / 6);
-    height: 88px;
-  }
-
-  .hero-container {
-    padding: 260px 432px 188px 432px;
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/hero-bgd.jpg);
-  }
-
-  .benefits-icon-container {
-    width: 264px;
-    height: 112px;
-    background: #f4f4fd;
-    border-radius: 4px;
-    margin-bottom: 8px;
-    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    margin-bottom: 72px;
   }
 
-  .benefits-subtitle {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: var(--black-color);
-    margin-bottom: 8px;
+  .logo-footer {
+    margin-right: 0;
   }
 
-  .benefits-icon {
-    fill: #f4f4fd;
-  }
-
-  .footer-container {
-    /* width: unset; */
-    max-width: 1440px;
-    /* padding: 100px 1020px 101px 156px; */
+  .subscribe-container {
     display: flex;
-    flex-direction: row;
-    /* gap: 72px; */
-    /* align-items: center;
-  justify-content: center; */
-    align-items: baseline;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
   }
 
-  .footer-subscribe-container {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .form-subscribe {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
+  .subscribe-input {
+    margin-bottom: 16px;
   }
 
   .subscribe-btn {
-    min-width: 165px;
-    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sm-container {
     display: flex;
-    flex-wrap: wrap;
-    padding: 8px 24px;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    gap: 16px;
-    border-radius: 4px;
-    background: var(--sky-blue);
-    border: none;
-    color: var(--white-color);
+    margin-bottom: 72px;
+  }
+
+  .subscribe-label {
+    display: block;
     text-align: center;
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    cursor: pointer;
   }
 }
 
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero-container {
-    background-color: var(--black-color);
+/*! tablet */
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  /* Header */
+  .menu-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .hamburger-btn {
+    display: none;
+  }
+
+  .modal {
+    max-width: 408px;
+    padding: 72px 24px 24px 24px;
+  }
+
+  /* Hero */
+
+  .overlay {
+    width: 100%;
+    height: 436px;
+
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero-bgd-2x.jpeg);
+      url(../images/hero-bgd-tabjpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .overlay {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/hero-bgd-tab-2x.jpg");
+    }
+  }
+
+  .hero-title {
+    margin-bottom: 36px;
+    max-width: 496px;
+
+    font-size: 56px;
+    line-height: 1.07;
+  }
+
+  /* Advantages */
+
+  .advant-item {
+    margin: 0;
+    max-width: 356px;
+  }
+
+  /* Team */
+
+  .team-card {
+    margin: 0;
+  }
+
+  /* Footer */
+  .subscribe-form {
+    display: flex;
+    gap: 24px;
+  }
+
+  .subscribe-input {
+    width: 264px;
+  }
+
+  /* Portfolio Page */
+  .portfolio-section {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+
+  .buttons-list {
+    margin-bottom: 64px;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .projects-list {
+    gap: 72px 24px;
+    justify-content: start;
+  }
+
+  .projects-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .portfolio-section > .container {
+    max-width: 768px;
+  }
+
+  .project-title {
+    font-size: 20px;
+  }
+}
+
+/*! Tablet only!!! */
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .tablet-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    max-width: 552px;
+    margin: 0 auto;
+  }
+
+  /* Header */
+  .contacts {
+    display: flex;
+    margin-left: auto;
+  }
+  .contact {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+  }
+  /* SLATE */
+
+  .contact-list {
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .contact-item {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+  }
+  /* Advantages */
+  .advant-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 100%;
+    max-width: 736px;
+    margin: 0 auto;
+    gap: 72px 24px;
+  }
+
+  .advant-undertitle {
+    text-align: start;
+  }
+
+  /* Team */
+  .team-list {
+    gap: 64px 24px;
+  }
+
+  /* Customers */
+  .customers-list {
+    gap: 72px 24px;
+  }
+
+  .customers-item {
+    width: 168px;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 96px 0;
+  }
+
+  .footer-container {
+    gap: 72px 24px;
+  }
+}
+/*! desktop*/
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .contacts {
+    margin-left: auto;
+  }
+
+  /* Header */
+
+  /* Hero */
+  .hero {
+    padding: 188px 0;
+  }
+
+  .overlay {
+    width: 100%;
+    height: 600px;
+
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bgd-tab.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .overlay {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/hero-bgd-2x.jpeg");
+    }
+  }
+
+  .hero-title {
+    margin-bottom: 48px;
+  }
+
+  /* Advantages */
+
+  .advant-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .advant-list {
+    display: flex;
+    gap: 24px;
+  }
+  .advant-item {
+    width: 264px;
+  }
+
+  .advant-undertitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .advant-item .thumb {
+    display: flex;
+  }
+
+  .advant-text {
+    font-weight: 400;
+  }
+
+  /* What are we doing */
+
+  .what-doing-section {
+    display: block;
+  }
+
+  /* Team */
+
+  .team-section {
+    padding: 120px 0;
+  }
+
+  .team-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .team-card {
+    width: calc((100% - 24px * 3) / 4);
+  }
+
+  /* Customers */
+
+  .customers-section {
+    padding: 120px 0;
+  }
+
+  .customers-item {
+    width: 168px;
+    height: 88px;
+  }
+
+  .customers-list {
+    gap: 24px;
+  }
+
+  /* Footer */
+
+  .footer {
+    padding: 100px 0;
+  }
+
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .footer-text {
+    width: 264px;
+  }
+
+  .logo-container {
+    margin-right: 40px;
+  }
+
+  /* Portfolio Page */
+  .portfolio-section {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+
+  .buttons-list {
+    margin-bottom: 72px;
+  }
+
+  .projects-list {
+    gap: 48px 24px;
+  }
+
+  .projects-item {
+    width: calc((100% - 24px * 2) / 3);
+  }
+
+  .portfolio-section > .container {
+    max-width: 1158px;
   }
 }
