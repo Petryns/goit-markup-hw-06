@@ -315,7 +315,7 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/hero-bg/hero-bgd-mob-2x.webp");
+      url("../images/hero-bgd-mob-2x.jpg");
   }
 }
 
@@ -660,6 +660,7 @@ Section Team*/
 
 .subscribe-icon {
   margin-left: 16px;
+  fill: #ffffff;
 }
 
 /*! Portfolio page */
